@@ -1,0 +1,18 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" width="25" height="25">
+	<title>icons8-restore-down-96</title>
+	<style>
+		.s0 { fill: #000000 } 
+		.s1 { opacity: .53;fill: #000000 } 
+		.s2 { opacity: .9;fill: #000000 } 
+	</style>
+	<g id="Background">
+		<path id="Path 0" fill-rule="evenodd" class="s0" d="m4.9 0.3l0.3-0.3h18.8l0.3 0.3h0.4v0.4l0.3 0.3v18.8l-0.3 0.3v0.4h-0.4l-0.3 0.3h-3.2v3.2l-0.3 0.3v0.4h-0.4l-0.3 0.3h-18.8l-0.3-0.3h-0.4v-0.4l-0.3-0.3v-18.8l0.3-0.3v-0.4h0.4l0.3-0.3h3.2v-3.2l0.3-0.3v-0.4zm15.3 3.9l0.7 0.7v13.8h2.1v-16.6h-16.7v2.1zm-18.1 2v16.7h16.7v-16.7z"/>
+		<path id="Path 1" class="s1" d="m4.5 0h0.4v0.3h-0.4zm19.8 0h0.4v0.4h-0.4zm0.4 0.3h0.3v0.4h-0.3zm-24.7 4.2h0.3v0.3h-0.3zm24.7 15.6h0.3v0.4h-0.3zm-0.4 0.3h0.4v0.4h-0.4zm-24.3 3.8h0.3v0.3h-0.3zm20.5 0h0.3v0.4h-0.3zm-20.2 0.3h0.4v0.4h-0.4zm19.8 0h0.4v0.3h-0.4z"/>
+		<path id="Path 2" class="s2" d="m24 0h0.3v0.3h-0.3z"/>
+		<path id="Path 3" class="s2" d="m4.9 0h0.3v0.3h-0.3zm-0.7 0.7h0.3v0.4h-0.3zm20.5 0h0.3v0.3h-0.3zm-24 3.5h0.3v0.4h-0.3zm-0.7 0.6h0.3v0.4h-0.3z"/>
+		<path id="Path 4" class="s1" d="m4.2 0.3h0.3v0.4h-0.3zm-3.9 3.8h0.4v0.4h-0.4z"/>
+		<path id="Path 5" class="s2" d="m19.8 4.2h0.3v0.3h-0.3zm4.9 15.6h0.3v0.4h-0.3zm-0.7 0.7h0.3v0.3h-0.3zm-24 3.5h0.3v0.3h-0.3zm20.5 0h0.3v0.4h-0.3zm-19.8 0.7h0.3v0.3h-0.3zm19.1 0h0.3v0.4h-0.3z"/>
+		<path id="Path 6" class="s2" d="m20.5 4.9h0.3v0.3h-0.3z"/>
+		<path id="Path 7" class="s1" d="m20.1 4.2h0.4v0.3h-0.4zm0.4 0.4h0.3v0.3h-0.3z"/>
+	</g>
+</svg>

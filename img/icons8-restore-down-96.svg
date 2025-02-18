@@ -1,0 +1,18 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" width="10" height="10">
+	<title>icons8-restore-down-96</title>
+	<style>
+		.s0 { fill: #000000 } 
+		.s1 { opacity: .53;fill: #000000 } 
+		.s2 { opacity: .9;fill: #000000 } 
+	</style>
+	<g id="Background">
+		<path id="Path 0" fill-rule="evenodd" class="s0" d="m1.9 0.1l0.2-0.1h7.5l0.1 0.1h0.2v0.2l0.1 0.1v7.5l-0.1 0.2v0.1h-0.2l-0.1 0.1h-1.3v1.3l-0.1 0.1v0.2h-0.1l-0.2 0.1h-7.5l-0.1-0.1h-0.2v-0.2l-0.1-0.1v-7.5l0.1-0.2v-0.1h0.2l0.1-0.1h1.3v-1.3l0.1-0.1v-0.2zm6.1 1.6l0.3 0.2v5.6h0.8v-6.7h-6.6v0.9zm-7.3 0.8v6.7h6.7v-6.7z"/>
+		<path id="Path 1" class="s1" d="m1.8 0h0.1v0.1h-0.1zm7.9 0h0.2v0.2h-0.2zm0.2 0.1h0.1v0.2h-0.1zm-9.9 1.6h0.1v0.2h-0.1zm9.9 6.2h0.1v0.2h-0.1zm-0.2 0.1h0.2v0.1h-0.2zm-9.7 1.6h0.1v0.1h-0.1zm8.2 0h0.1v0.1h-0.1zm-8.1 0.2h0.2v0.1h-0.2zm8 0h0.1v0.2h-0.1z"/>
+		<path id="Path 2" class="s2" d="m9.6 0h0.1v0.1h-0.1z"/>
+		<path id="Path 3" class="s2" d="m1.9 0h0.2v0.1h-0.2zm-0.2 0.3h0.1v0.2h-0.1zm8.2 0h0.1v0.1h-0.1zm-9.6 1.4h0.1v0.1h-0.1zm-0.3 0.3h0.1v0.1h-0.1z"/>
+		<path id="Path 4" class="s1" d="m1.7 0.1h0.1v0.2h-0.1zm-1.6 1.5h0.2v0.1h-0.2z"/>
+		<path id="Path 5" class="s2" d="m7.9 1.7h0.2v0.1h-0.2zm2 6.3h0.1v0.1h-0.1zm-0.3 0.3h0.1v0.1h-0.1zm-9.6 1.4h0.1v0.1h-0.1zm8.2 0h0.1v0.2h-0.1zm-7.9 0.3h0.1v0.1h-0.1zm7.6 0h0.2v0.1h-0.2z"/>
+		<path id="Path 6" class="s2" d="m8.2 1.9h0.1v0.2h-0.1z"/>
+		<path id="Path 7" class="s1" d="m8.1 1.7h0.1v0.1h-0.1zm0.1 0.1h0.1v0.2h-0.1z"/>
+	</g>
+</svg>
