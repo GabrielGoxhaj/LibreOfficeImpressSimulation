@@ -675,9 +675,11 @@ div.taskbar {
 
 .impressWrapper {
 	display: flex;
+	flex-grow: 1;
 }
 
 .diapositiveWrapper {
+	display: flex;
 	flex-direction: column;
 	background-color: #fff;
 	width: 7%;
@@ -698,10 +700,12 @@ div.taskbar {
 	display: flex;
 	justify-content: space-between;
 	background-color: #f0f0f0;
+	font-family: 'Segoe UI', Tahoma, sans-serif;
 }
 
 .DXMenuWrapper{
 	font-size: small;
+	display: flex;
 }
 
 .DXMenuTitle{
@@ -718,11 +722,7 @@ div.taskbar {
 	display: flex;
 	flex-direction: column;
 	float: right;
-}
-
-.closed {
-	background-color: #000000;
-	width: 40px;
+	width: 40%;
 }
 
 .DXMenuIcons > button {
@@ -736,6 +736,37 @@ div.taskbar {
 
 .DXMenuIcons > button:hover {
 	background: #91C9F7;
+}
+
+.diapositiva {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	align-items: center;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 40px;
+	width: 100%;
+}
+
+.diapositiva > textarea {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 40px;
+	width: 70%;
+	height: 80%;
+	resize: none;
+}
+
+.mainBox {
+	width: 100%;
+	height: 100%;
+}
+
+.footer {
+	position: fixed;
+	bottom: 45px;
 }
 
 /* Responsive design hides taskbar search box (like windows 10 does) */

@@ -24,7 +24,6 @@
 // Dropdown functionality in LibreOfficeImpress
 	function toggleMenuItem(dropdownId) {
 		let $dropdown = $('#' + dropdownId);
-
 		if ($dropdown.is(':visible')) {
 			$dropdown.hide(); // Hide if it's already open
 		} else {
@@ -32,36 +31,16 @@
 			$dropdown.show(); // Show the clicked one
 		}
 	}
-	function menuItemImpressFile() {
-		toggleMenuItem('dropdownImpressFile');
-	}
-	function menuItemImpressModifica() {
-		toggleMenuItem('dropdownImpressModifica');
-	}
-	function menuItemImpressVisualizza() {
-		toggleMenuItem('dropdownImpressVisualizza');
-	}
-	function menuItemImpressInserisci() {
-		toggleMenuItem('dropdownImpressInserisci');
-	}
-	function menuItemImpressFormato() {
-		toggleMenuItem('dropdownImpressFormato');
-	}
-	function menuItemImpressDiapositiva() {
-		toggleMenuItem('dropdownImpressDiapositiva');
-	}
-	function menuItemImpressPresentazione() {
-		toggleMenuItem('dropdownImpressPresentazione');
-	}
-	function menuItemImpressStrumenti() {
-		toggleMenuItem('dropdownImpressStrumenti');
-	}
-	function menuItemImpressFinestra() {
-		toggleMenuItem('dropdownImpressFinestra');
-	}
-	function menuItemImpressAiuto() {
-		toggleMenuItem('dropdownImpressAiuto');
-	}
+	function menuItemImpressFile() {toggleMenuItem('dropdownImpressFile');}
+	function menuItemImpressModifica() {toggleMenuItem('dropdownImpressModifica');}
+	function menuItemImpressVisualizza() {toggleMenuItem('dropdownImpressVisualizza');}
+	function menuItemImpressInserisci() {toggleMenuItem('dropdownImpressInserisci');}
+	function menuItemImpressFormato() {toggleMenuItem('dropdownImpressFormato');}
+	function menuItemImpressDiapositiva() {toggleMenuItem('dropdownImpressDiapositiva');}
+	function menuItemImpressPresentazione() {toggleMenuItem('dropdownImpressPresentazione');}
+	function menuItemImpressStrumenti() {toggleMenuItem('dropdownImpressStrumenti');}
+	function menuItemImpressFinestra() {toggleMenuItem('dropdownImpressFinestra');}
+	function menuItemImpressAiuto() {toggleMenuItem('dropdownImpressAiuto');}
 
 	let toggleDiapositive = 1;
 	function toggleDiapositiveMenu() {
@@ -77,7 +56,34 @@
 			toggleDiapositive = 0;
 		}
 	}
-	
+
+	function toggleDXMenuImage(index) {
+		let $image = $('.DXMenu' + index);
+		if ($image.is(':visible')) {
+			$image.hide();
+		} else {
+			$('.DXMenu1, .DXMenu2, .DXMenu3, .DXMenu4, .DXMenu5, .DXMenu6, .DXMenu7, DXMenu8').hide();
+			$image.show();
+		}
+	}
+	function unsetAllBackgroundColors() {
+		for (let i = 1; i <= 8; i++) {
+			document.querySelector(`.iconDXMenu${i}`).style.removeProperty("background-color");
+		}
+	}
+	function menuItemDXMenu(index) {
+		toggleDXMenuImage(index);
+		unsetAllBackgroundColors();
+		document.querySelector(`.iconDXMenu${index}`).style.setProperty("background-color", "#91C9F7");
+	}
+	function menuItemDXMenu1(){menuItemDXMenu(1);}
+	function menuItemDXMenu2(){menuItemDXMenu(2);}
+	function menuItemDXMenu3(){menuItemDXMenu(3);}
+	function menuItemDXMenu4(){menuItemDXMenu(4);}
+	function menuItemDXMenu5(){menuItemDXMenu(5);}
+	function menuItemDXMenu6(){menuItemDXMenu(6);}
+	function menuItemDXMenu7(){menuItemDXMenu(7);}
+	function menuItemDXMenu8(){menuItemDXMenu(8);}
 
 // File uploader
 	dropHide();
