@@ -63,6 +63,22 @@
 		toggleMenuItem('dropdownImpressAiuto');
 	}
 
+	let toggleDiapositive = 1;
+	function toggleDiapositiveMenu() {
+		if (toggleDiapositive === 0) {
+			document.querySelector(".diapositiveWrapper").style.removeProperty("display");
+			document.querySelector("#visualizzaPannelloDiapositive").style.fontWeight = "bold";
+			toggleMenuItem('dropdownImpressVisualizza');
+			toggleDiapositive = 1;
+		} else {
+			document.querySelector(".diapositiveWrapper").style.setProperty("display", "none");
+			document.querySelector("#visualizzaPannelloDiapositive").style.fontWeight = "normal"; // Explicitly setting normal
+			toggleMenuItem('dropdownImpressVisualizza');
+			toggleDiapositive = 0;
+		}
+	}
+	
+
 // File uploader
 	dropHide();
 	function onFileSelected(event) {
@@ -212,10 +228,10 @@ $(document).ready(function () {
 // Libre Office Impress (not totally implemented yet) -> Currently on test
 	// x button
 	$("#impressClose").click(function () {
-		$("#libreOfficeImpress").fadeOut(300);
+		$("#libreOfficeImpress").fadeOut(0);
 	});
 	$(".impressClose").click(function () {
-		$("#libreOfficeImpress").fadeOut(300);
+		$("#libreOfficeImpress").fadeOut(0);
 	});
 	// Fullscreen Libre Office Impress
 	$("#impressRestore").click(function () {
@@ -232,7 +248,7 @@ $(document).ready(function () {
 	
 	// Taskbar icon
 	$("#libreOfficeImpressFrame").click(function () {
-		$("#libreOfficeImpress").toggle(300);
+		$("#libreOfficeImpress").toggle(0);
 	});
 
 // Start Menu
@@ -267,3 +283,4 @@ $(document).ready(function () {
 		$('div[class^="window"]').toggle();
 	});
 });
+
