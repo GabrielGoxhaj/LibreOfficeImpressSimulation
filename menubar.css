@@ -1,0 +1,164 @@
+/* Menu Bar di Libre Office Impress */
+
+.menubarImpress {
+    position: relative;
+    /* Ensure relative positioning for contained elements */
+    display: flex;
+    align-items: center;
+}
+
+button.menubarItem,
+button.menubarItemImpress {
+    background: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 12px;
+    border: 2px solid white;
+    padding: 0px 4px;
+    transition: 0.1s;
+    position: relative;
+}
+
+/* Stili comuni per tutti i dropdown del Menu Bar */
+
+.dropdown,
+.dropdownImpressFile,
+.dropdownImpressModifica,
+.dropdownImpressVisualizza,
+.dropdownImpressInserisci,
+.dropdownImpressFormato,
+.dropdownImpressDiapositiva,
+.dropdownImpressPresentazione,
+.dropdownImpressStrumenti,
+.dropdownImpressFinestra,
+.dropdownImpressAiuto {
+    display: none;
+    position: absolute;
+    background-color: #F2F2F2;
+    padding: 2px;
+    width: 255px;
+    height: auto;
+    overflow: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border: lightgray;
+    border-width: 1px;
+    border-style: solid;
+    position: absolute;
+    z-index: 10;
+}
+
+.dropdown a,
+.dropdownImpressFile a,
+.dropdownImpressModifica a,
+.dropdownImpressVisualizza a,
+.dropdownImpressInserisci a,
+.dropdownImpressFormato a,
+.dropdownImpressDiapositiva a,
+.dropdownImpressPresentazione a,
+.dropdownImpressStrumenti a,
+.dropdownImpressFinestra a,
+.dropdownImpressAiuto a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 9pt;
+    display: block;
+    padding-left: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 10px;
+    transition: 0.1s;
+}
+
+.dropdown a:hover,
+.dropdownImpressFile a:hover,
+.dropdownImpressModifica a:hover,
+.dropdownImpressVisualizza a:hover,
+.dropdownImpressInserisci a:hover,
+.dropdownImpressFormato a:hover,
+.dropdownImpressDiapositiva a:hover,
+.dropdownImpressPresentazione a:hover,
+.dropdownImpressStrumenti a:hover,
+.dropdownImpressFinestra a:hover,
+.dropdownImpressAiuto a:hover {
+    background-color: #91C9F7;
+}
+
+hr.dropdown-separator,
+hr.dropdownImpressFile-separator,
+hr.dropdownImpressModifica-separator,
+hr.dropdownImpressVisualizza-separator,
+hr.dropdownImpressInserisci-separator,
+hr.dropdownImpressFormato-separator,
+hr.dropdownImpressDiapositiva-separator,
+hr.dropdownImpressPresentazione-separator,
+hr.dropdownImpressStrumenti-separator,
+hr.dropdownImpressFinestra-separator,
+hr.dropdownImpressAiuto-separator {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Stile per le Rows con le icone */
+
+button.iconRow1,
+button.iconRow2 {
+    background: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    border: 2px solid white;
+    padding: 0px 8px;
+    transition: 0.1s;
+    width: 40px;
+    height: 30px;
+}
+
+.iconRow1>img,
+.iconRow2>img {
+    align-items: center;
+}
+
+/* Stile generale per la parte top di Libre Office Impress */
+
+div.menubar,
+div.menubarImpress,
+div.iconImpressRow1,
+div.iconImpressRow2 {
+    background: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 12px;
+    padding: 0 0;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: solid #F0F0F0 2px;
+    display: flex;
+    align-items: center;
+}
+
+button.menubarItem:hover,
+button.menubarItem:active,
+button.menubarItemImpress:hover,
+button.menubarItemImpress:active,
+button.iconRow1:hover,
+button.iconRow1:active,
+button.iconRow2:hover,
+button.iconRow2:active {
+    color: black;
+    background: #91C9F7;
+    border: 2px solid #91C9F7;
+}
+
+.activated {
+	font-weight: bold;
+}
+
+.selected {
+    background-color: #91C9F7 !important;
+}
+
+.vl {
+  border-left: 1px solid black;
+  height: 15px;
+}

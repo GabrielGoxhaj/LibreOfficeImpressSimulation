@@ -1,0 +1,126 @@
+/* Stile generale per Main Area di Libre Office Impress */
+
+.impressUI {
+	width: 100%;
+}
+
+.fa-libre-office-impress:before {
+	content: url(img/ImpressIcon.png);
+}
+
+.impressWrapper {
+	display: flex;
+	flex-grow: 1;
+}
+
+#libreOfficeImpress {
+	position: absolute;
+	top: 125px;
+	left: 80px;
+	min-width: 320px;
+	min-height: 200px;
+	width: 640px;
+	height: 480px;
+}
+
+/* Menu Diapositive */
+
+.diapositiveTitle {
+	display: flex;
+	justify-content: space-between;
+	background-color: #f0f0f0;
+	font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.diapositiveWrapper {
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	width: 7%;
+	font-size: small;
+	height: 750px;
+}
+
+/* Area Diapositiva */
+
+.diapositiva {
+	background-color: white;
+	text-align: center;
+	width: 70%;
+	top: 50%;
+	position: absolute;
+	left: 25%;
+}
+
+.diapositiva>textarea {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 40px;
+	width: 70%;
+	height: 80%;
+}
+
+.mainBox {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	flex: 1;
+}
+
+/* Menu a destra */
+
+.impostazioniDxTitle {
+	display: flex;
+}
+
+.LateralBarWrapper {
+	font-size: small;
+	display: flex;
+}
+
+.LateralBarTitle {
+	display: flex;
+	justify-content: space-between;
+	background-color: #f0f0f0;
+}
+
+.LateralBarIcons {
+	display: flex;
+	flex-direction: column;
+	float: right;
+	width: 40%;
+}
+
+.LateralBarIcons>button {
+	font-family: 'Segoe UI', Tahoma, sans-serif;
+	border: none;
+	padding: 0px 8px;
+	transition: 0.1s;
+	width: 40px;
+	height: 30px;
+}
+
+.LateralBarIcons>button:hover {
+	background: #91C9F7;
+}
+
+/* Stile generale per elementi ricorrenti */
+
+.smallIcons {
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.smallIcons:hover,
+.smallIcons:active {
+	background-color: #91C9F7;
+}
+
+.footer {
+	position: fixed;
+	bottom: 45px;
+}
+
+.activated {
+	font-weight: bold;
+}

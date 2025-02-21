@@ -79,49 +79,66 @@ $(document).on('click', function(event) {
 	let toggleMenuDX = 1;
 	function togglerMenuDX() {
 		if (toggleMenuDX === 0) {
-			document.querySelector(".DXMenuWrapper").style.removeProperty("display");
+			document.querySelector(".LateralBarWrapper").style.removeProperty("display");
 			document.querySelector("#visualizzaBarraLaterale").classList.add("activated");
 			toggleMenuItem('dropdownImpressVisualizza');
 			toggleMenuDX = 1;
 		} else {
-			document.querySelector(".DXMenuWrapper").style.setProperty("display", "none");
+			document.querySelector(".LateralBarWrapper").style.setProperty("display", "none");
 			document.querySelector("#visualizzaBarraLaterale").classList.remove("activated"); // Explicitly setting normal
 			toggleMenuItem('dropdownImpressVisualizza');
 			toggleMenuDX = 0;
 		}
 	}
+
+	let toggleRow2 = 1;
+	function togglerRow2(button) {
+		let row2 = document.querySelector(".iconImpressRow2");
+		if (toggleRow2 === 0) {
+			row2.style.display = ""; // Reset the display style to the default (usually 'block' or 'inline')
+			button.classList.add("selected");
+			toggleRow2 = 1;
+			console.log(toggleRow2);
+		} else {
+			row2.style.display = "none"; // Hide the element
+			button.classList.remove("selected"); // Explicitly removing the "activated" class
+			toggleRow2 = 0;
+			console.log(toggleRow2);
+		}
+	}
 	
-	let counterDXMenu = 0;
-	function toggleDXMenuImage(index) {
-		let $image = $('.DXMenu' + index);
+	
+	let counterLateralBar = 0;
+	function toggleLateralBarImage(index) {
+		let $image = $('.LateralBar' + index);
 		if ($image.is(':visible')) {
 			$image.hide();
-			counterDXMenu = 1;
+			counterLateralBar = 1;
 		} else {
-			$('.DXMenu1, .DXMenu2, .DXMenu3, .DXMenu4, .DXMenu5, .DXMenu6, .DXMenu7, DXMenu8').hide();
+			$('.LateralBar1, .LateralBar2, .LateralBar3, .LateralBar4, .LateralBar5, .LateralBar6, .LateralBar7, LateralBar8').hide();
 			$image.show();
-			counterDXMenu = 0;
+			counterLateralBar = 0;
 		}
 	}
 	function unsetAllBackgroundColors() {
 		for (let i = 1; i <= 8; i++) {
-			document.querySelector(`.iconDXMenu${i}`).style.removeProperty("background-color");
+			document.querySelector(`.iconLateralBar${i}`).classList.remove("selected");;
 		}
 	}
-	function menuItemDXMenu(index) {
-		toggleDXMenuImage(index);
+	function menuItemLateralBar(index) {
+		toggleLateralBarImage(index);
 		unsetAllBackgroundColors();
-		if (counterDXMenu === 0){
-			document.querySelector(`.iconDXMenu${index}`).style.setProperty("background-color", "#91C9F7");}
+		if (counterLateralBar === 0){
+			document.querySelector(`.iconLateralBar${index}`).classList.add("selected");;}
 	}
-	function menuItemDXMenu1(){menuItemDXMenu(1);}
-	function menuItemDXMenu2(){menuItemDXMenu(2);}
-	function menuItemDXMenu3(){menuItemDXMenu(3);}
-	function menuItemDXMenu4(){menuItemDXMenu(4);}
-	function menuItemDXMenu5(){menuItemDXMenu(5);}
-	function menuItemDXMenu6(){menuItemDXMenu(6);}
-	function menuItemDXMenu7(){menuItemDXMenu(7);}
-	function menuItemDXMenu8(){menuItemDXMenu(8);}
+	function menuItemLateralBar1(){menuItemLateralBar(1);}
+	function menuItemLateralBar2(){menuItemLateralBar(2);}
+	function menuItemLateralBar3(){menuItemLateralBar(3);}
+	function menuItemLateralBar4(){menuItemLateralBar(4);}
+	function menuItemLateralBar5(){menuItemLateralBar(5);}
+	function menuItemLateralBar6(){menuItemLateralBar(6);}
+	function menuItemLateralBar7(){menuItemLateralBar(7);}
+	function menuItemLateralBar8(){menuItemLateralBar(8);}
 
 // File uploader
 	dropHide();

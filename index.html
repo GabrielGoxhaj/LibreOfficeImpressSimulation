@@ -22,7 +22,9 @@
 	<script src="js/jquery/jquery-ui.min.js"></script>
 	<script src="js/filesaver.min.js"></script>
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="styles.css" rel="stylesheet">
+	<link href="impress_main.css" rel="stylesheet">
+	<link href="menubar.css" rel="stylesheet">
+	<link href="windows.css" rel="stylesheet">
 	<link href="awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!--[if lte IE 8]>
@@ -161,8 +163,8 @@
 				</div>
 				<!-- Libre Office Dropdown Modifica -->
 				<div id="dropdownImpressModifica" class="dropdownImpressModifica">
-					<a id="modificaAnnulla">Annulla</a>
-					<a id="modificaRipristina">Ripristina</a>
+					<a id="modificaAnnulla" onclick="triggerCtrlZ()">Annulla</a>
+					<a id="modificaRipristina" onclick="triggerCtrlY()">Ripristina</a>
 					<hr class="dropdown-separator">
 					<a id="modificaTaglia">Taglia</a>
 					<a id="modificaCopia">Copia</a>
@@ -210,11 +212,11 @@
 					<a id="visualizzaColoreToniDiGrigio">Colore/Toni di grigio</a>
 					<hr class="dropdown-separator">
 					<a id="visualizzaBarraLaterale" class="activated" onclick="togglerMenuDX()">Barra laterale</a>
-					<a id="visualizzaLayoutDiapositiva">Layout diapositiva</a>
-					<a id="visualizzaCambioDiapositiva">Cambio diapositiva</a>
-					<a id="visualizzaAnimazione">Animazione</a>
-					<a id="visualizzaStili">Stili</a>
-					<a id="visualizzaGalleria">Galleria</a>
+					<a id="visualizzaLayoutDiapositiva" onclick="menuItemLateralBar1()">Layout diapositiva</a>
+					<a id="visualizzaCambioDiapositiva" onclick="menuItemLateralBar6()">Cambio diapositiva</a>
+					<a id="visualizzaAnimazione" onclick="menuItemLateralBar7()">Animazione</a>
+					<a id="visualizzaStili" onclick="menuItemLateralBar2()">Stili</a>
+					<a id="visualizzaGalleria" onclick="menuItemLateralBar3()">Galleria</a>
 					<a id="visualizzaNavigatore">Navigatore</a>
 					<a id="visualizzaBarraDeiColori">Barra dei colori</a>
 					<hr class="dropdown-separator">
@@ -372,86 +374,86 @@
 					<a id="aiutoInformazioniLibreOffice">Informazioni su LibreOffice</a>
 				</div>
 				<!-- Libre Office Impress Icons Riga 1 -->
-				<div id="iconImpressRow" class="iconImpressRow">
-					<button class="iconRiga1"><img src="img/iconsR1/01r1.png"></button>
-					<button class="iconRiga1"><img src="img/iconsR1/02r1.png"></button>
-					<button class="iconRiga1"><img src="img/iconsR1/03r1.png"></button>
+				<div id="iconImpressRow1" class="iconImpressRow1">
+					<button class="iconRow1"><img src="img/iconsR1/01r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/02r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/03r1.png"></button>
 					<div class="vl"></div>
-					<button class="iconRiga1"><img src="img/iconsR1/04r1.png"></button>
-					<button class="iconRiga1" onclick="print()"><img src="img/iconsR1/05r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/04r1.png"></button>
+					<button class="iconRow1" onclick="print()"><img src="img/iconsR1/05r1.png"></button>
 					<div class="vl"></div>
-					<button class="iconRiga1" onclick="execCommand('cut')"><img src="img/iconsR1/06r1.png"></button>
-					<button class="iconRiga1" onclick="execCommand('copy')"><img src="img/iconsR1/07r1.png"></button>
-					<button class="iconRiga1" onclick="execCommand('paste')"><img src="img/iconsR1/08r1.png"></button>
+					<button class="iconRow1" onclick="execCommand('cut')"><img src="img/iconsR1/06r1.png"></button>
+					<button class="iconRow1" onclick="execCommand('copy')"><img src="img/iconsR1/07r1.png"></button>
+					<button class="iconRow1" onclick="execCommand('paste')"><img src="img/iconsR1/08r1.png"></button>
 					<div class="vl"></div>
-					<button class="iconRiga1"><img src="img/iconsR1/09r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/09r1.png"></button>
 					<div class="vl"></div>
-					<button class="iconRiga1"><img src="img/iconsR1/10r1.png"></button>
-					<button class="iconRiga1"><img src="img/iconsR1/11r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/10r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/11r1.png"></button>
 					<div class="vl"></div>
-					<button class="iconRiga1"><img src="img/iconsR1/12r1.png"></button>
-					<button class="iconRiga1"><img src="img/iconsR1/13r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/12r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/13r1.png"></button>
 					<div class="vl"></div>
-					<button class="iconRiga1"><img src="img/iconsR1/14r1.png"></button>
-					<button class="iconRiga1"><img src="img/iconsR1/15r1.png"></button>
-					<button class="iconRiga1"><img src="img/iconsR1/16r1.png"></button>
-					<button class="iconRiga1"><img src="img/iconsR1/17r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/14r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/15r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/16r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/17r1.png"></button>
 					<div class="vl"></div>
-					<button class="iconRiga1"><img src="img/iconsR1/18r1.png"></button>
-					<button class="iconRiga1"><img src="img/iconsR1/19r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/18r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/19r1.png"></button>
 					<div class="vl"></div>
-					<button class="iconRiga1"><img src="img/iconsR1/20r1.png"></button>
-					<button class="iconRiga1"><img src="img/iconsR1/21r1.png"></button>
-					<button class="iconRiga1"><img src="img/iconsR1/22r1.png"></button>
-					<button class="iconRiga1"><img src="img/iconsR1/23r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/20r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/21r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/22r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/23r1.png"></button>
 					<div class="vl"></div>
-					<button class="iconRiga1"><img src="img/iconsR1/24r1.png"></button>
-					<button class="iconRiga1"><img src="img/iconsR1/25r1.png"></button>
-					<button class="iconRiga1"><img src="img/iconsR1/26r1.png"></button>
-					<button class="iconRiga1"><img src="img/iconsR1/27r1.png"></button>
-					<button class="iconRiga1"><img src="img/iconsR1/28r1.png"></button>
-					<button class="iconRiga1"><img src="img/iconsR1/29r1.png"></button>
-					<button class="iconRiga1"><img src="img/iconsR1/30r1.png"></button>
-					<button class="iconRiga1"><img src="img/iconsR1/31r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/24r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/25r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/26r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/27r1.png"></button>
+					<button class="iconRow1 selected" onclick="togglerRow2(this)"><img src="img/iconsR1/28r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/29r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/30r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/31r1.png"></button>
 					<div class="vl"></div>
-					<button class="iconRiga1"><img src="img/iconsR1/32r1.png"></button>
+					<button class="iconRow1"><img src="img/iconsR1/32r1.png"></button>
 				</div>
 				<!-- Libre Office Impress Icons Riga 2 -->
-				<div id="iconImpressRow" class="iconImpressRow">
-					<button class="iconRiga2"><img src="img/iconsR2/01r2.png"></button>
-					<button class="iconRiga2"><img src="img/iconsR2/02r2.png"></button>
+				<div id="iconImpressRow2" class="iconImpressRow2">
+					<button class="iconRow2 selected"><img src="img/iconsR2/01r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/02r2.png"></button>
 					<div class="vl"></div>
-					<button class="iconRiga2"><img src="img/iconsR2/03r2.png"></button>
-					<button class="iconRiga2"><img src="img/iconsR2/04r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/03r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/04r2.png"></button>
 					<div class="vl"></div>
-					<button class="iconRiga2"><img src="img/iconsR2/05r2.png"></button>
-					<button class="iconRiga2"><img src="img/iconsR2/06r2.png"></button>
-					<button class="iconRiga2"><img src="img/iconsR2/07r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/05r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/06r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/07r2.png"></button>
 					<div class="vl"></div>
-					<button class="iconRiga2"><img src="img/iconsR2/08r2.png"></button>
-					<button class="iconRiga2"><img src="img/iconsR2/09r2.png"></button>
-					<button class="iconRiga2"><img src="img/iconsR2/10r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/08r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/09r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/10r2.png"></button>
 					<div class="vl"></div>
-					<button class="iconRiga2"><img src="img/iconsR2/11r2.png"></button>
-					<button class="iconRiga2"><img src="img/iconsR2/12r2.png"></button>
-					<button class="iconRiga2"><img src="img/iconsR2/13r2.png"></button>
-					<button class="iconRiga2"><img src="img/iconsR2/14r2.png"></button>
-					<button class="iconRiga2"><img src="img/iconsR2/15r2.png"></button>
-					<button class="iconRiga2"><img src="img/iconsR2/16r2.png"></button>
-					<button class="iconRiga2"><img src="img/iconsR2/17r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/11r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/12r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/13r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/14r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/15r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/16r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/17r2.png"></button>
 					<div class="vl"></div>
-					<button class="iconRiga2"><img src="img/iconsR2/18r2.png"></button>
-					<button class="iconRiga2"><img src="img/iconsR2/19r2.png"></button>
-					<button class="iconRiga2"><img src="img/iconsR2/20r2.png"></button>
-					<button class="iconRiga2"><img src="img/iconsR2/21r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/18r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/19r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/20r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/21r2.png"></button>
 					<div class="vl"></div>
-					<button class="iconRiga2"><img src="img/iconsR2/22r2.png"></button>
-					<button class="iconRiga2"><img src="img/iconsR2/23r2.png"></button>
-					<button class="iconRiga2"><img src="img/iconsR2/24r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/22r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/23r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/24r2.png"></button>
 					<div class="vl"></div>
-					<button class="iconRiga2"><img src="img/iconsR2/25r2.png"></button>
-					<button class="iconRiga2"><img src="img/iconsR2/26r2.png"></button>
-					<button class="iconRiga2"><img src="img/iconsR2/27r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/25r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/26r2.png"></button>
+					<button class="iconRow2"><img src="img/iconsR2/27r2.png"></button>
 				</div>
 
 				<!-- Libre Office Impress UI HTML W.I.P. -->
@@ -469,33 +471,36 @@
 						</div>
 					</div>
 					
-					<div class="DXMenuWrapper">
+					<div class="LateralBarWrapper">
 						<div class="menuOpenedTest">
-							<img src="img/iconsDXMenu/DXMenu1.PNG" class="DXMenu1" style="display: none;">
-							<img src="img/iconsDXMenu/DXMenu2.PNG" class="DXMenu2" style="display: none;">
-							<img src="img/iconsDXMenu/DXMenu3.PNG" class="DXMenu3" style="display: none;">
-							<img src="img/iconsDXMenu/DXMenu4.PNG" class="DXMenu4" style="display: none;">
-							<img src="img/iconsDXMenu/DXMenu5.PNG" class="DXMenu5" style="display: none;">
-							<img src="img/iconsDXMenu/DXMenu6.PNG" class="DXMenu6" style="display: none;">
-							<img src="img/iconsDXMenu/DXMenu7.PNG" class="DXMenu7" style="display: none;">
-							<img src="img/iconsDXMenu/DXMenu8.PNG" class="DXMenu8" style="display: none;">
+							<img src="img/iconsLateralBar/LateralBar1.PNG" class="LateralBar1" style="display: none;">
+							<img src="img/iconsLateralBar/LateralBar2.PNG" class="LateralBar2" style="display: none;">
+							<img src="img/iconsLateralBar/LateralBar3.PNG" class="LateralBar3" style="display: none;">
+							<img src="img/iconsLateralBar/LateralBar4.PNG" class="LateralBar4" style="display: none;">
+							<img src="img/iconsLateralBar/LateralBar5.PNG" class="LateralBar5" style="display: none;">
+							<img src="img/iconsLateralBar/LateralBar6.PNG" class="LateralBar6" style="display: none;">
+							<img src="img/iconsLateralBar/LateralBar7.PNG" class="LateralBar7" style="display: none;">
+							<img src="img/iconsLateralBar/LateralBar8.PNG" class="LateralBar8" style="display: none;">
 						</div>
-						<div class="DXMenuTitle">
-							<div class="DXMenuIcons">
-								<button class="iconDXMenu1" onclick="menuItemDXMenu1()"><img src="img/iconsDXMenu/iconDX1.png"></button>
-								<button class="iconDXMenu2" onclick="menuItemDXMenu2()"><img src="img/iconsDXMenu/iconDX2.png"></button>
-								<button class="iconDXMenu3" onclick="menuItemDXMenu3()"><img src="img/iconsDXMenu/iconDX3.png"></button>
-								<button class="iconDXMenu4" onclick="menuItemDXMenu4()"><img src="img/iconsDXMenu/iconDX4.png"></button>
-								<button class="iconDXMenu5" onclick="menuItemDXMenu5()"><img src="img/iconsDXMenu/iconDX5.png"></button>
-								<button class="iconDXMenu6" onclick="menuItemDXMenu6()"><img src="img/iconsDXMenu/iconDX6.png"></button>
-								<button class="iconDXMenu7" onclick="menuItemDXMenu7()"><img src="img/iconsDXMenu/iconDX7.png"></button>
-								<button class="iconDXMenu8" onclick="menuItemDXMenu8()"><img src="img/iconsDXMenu/iconDX8.png"></button>
+						<div class="LateralBarTitle">
+							<div class="LateralBarIcons">
+								<button class="iconLateralBar1" onclick="menuItemLateralBar1()"><img src="img/iconsLateralBar/iconDX1.png"></button>
+								<button class="iconLateralBar2" onclick="menuItemLateralBar2()"><img src="img/iconsLateralBar/iconDX2.png"></button>
+								<button class="iconLateralBar3" onclick="menuItemLateralBar3()"><img src="img/iconsLateralBar/iconDX3.png"></button>
+								<button class="iconLateralBar4" onclick="menuItemLateralBar4()"><img src="img/iconsLateralBar/iconDX4.png"></button>
+								<button class="iconLateralBar5" onclick="menuItemLateralBar5()"><img src="img/iconsLateralBar/iconDX5.png"></button>
+								<button class="iconLateralBar6" onclick="menuItemLateralBar6()"><img src="img/iconsLateralBar/iconDX6.png"></button>
+								<button class="iconLateralBar7" onclick="menuItemLateralBar7()"><img src="img/iconsLateralBar/iconDX7.png"></button>
+								<button class="iconLateralBar8" onclick="menuItemLateralBar8()"><img src="img/iconsLateralBar/iconDX8.png"></button>
 							</div>
 							<!-- <p>Animazione</p><p class="smallIcons">&#63; &times;</p> -->
 						</div>
 					</div>
 				 </div>
-				 <div class="footer"><img src="img/footerOffice.PNG"></div>
+				 <div class="footer">
+					<!-- <img src="img/footerOffice.PNG"> -->
+					
+				</div>
 				
 				<!-- Libre Office Impress UI -->
 				<!-- <div>
