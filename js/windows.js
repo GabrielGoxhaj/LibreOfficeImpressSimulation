@@ -34,7 +34,6 @@ function toggleMenuItem(dropdownId, button) {
 		$dropdown.show(); 
         // Get button position
         let buttonOffset = $button.offset();
-        let buttonHeight = $button.outerHeight();
 
         // Set dropdown position directly below the button
         $dropdown.css({
@@ -66,14 +65,29 @@ $(document).on('click', function(event) {
 	function toggleDiapositiveMenu() {
 		if (toggleDiapositive === 0) {
 			document.querySelector(".diapositiveWrapper").style.removeProperty("display");
-			document.querySelector("#visualizzaPannelloDiapositive").style.fontWeight = "bold";
+			document.querySelector("#visualizzaPannelloDiapositive").classList.add("activated");
 			toggleMenuItem('dropdownImpressVisualizza');
 			toggleDiapositive = 1;
 		} else {
 			document.querySelector(".diapositiveWrapper").style.setProperty("display", "none");
-			document.querySelector("#visualizzaPannelloDiapositive").style.fontWeight = "normal"; // Explicitly setting normal
+			document.querySelector("#visualizzaPannelloDiapositive").classList.remove("activated"); // Explicitly setting normal
 			toggleMenuItem('dropdownImpressVisualizza');
 			toggleDiapositive = 0;
+		}
+	}
+
+	let toggleMenuDX = 1;
+	function togglerMenuDX() {
+		if (toggleMenuDX === 0) {
+			document.querySelector(".DXMenuWrapper").style.removeProperty("display");
+			document.querySelector("#visualizzaBarraLaterale").classList.add("activated");
+			toggleMenuItem('dropdownImpressVisualizza');
+			toggleMenuDX = 1;
+		} else {
+			document.querySelector(".DXMenuWrapper").style.setProperty("display", "none");
+			document.querySelector("#visualizzaBarraLaterale").classList.remove("activated"); // Explicitly setting normal
+			toggleMenuItem('dropdownImpressVisualizza');
+			toggleMenuDX = 0;
 		}
 	}
 	

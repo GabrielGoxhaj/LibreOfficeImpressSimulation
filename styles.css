@@ -719,9 +719,7 @@ div.taskbar {
 	background-color: #f0f0f0;
 }
 
-#visualizzaPannelloDiapositive{
-	font-weight: bold;
-}
+
 
 .DXMenuIcons {
 	display: flex;
@@ -770,6 +768,10 @@ div.taskbar {
 .footer {
 	position: fixed;
 	bottom: 45px;
+}
+
+.activated{
+	font-weight: bold;
 }
 
 /* Responsive design hides taskbar search box (like windows 10 does) */
