@@ -98,7 +98,7 @@
 	width: 40%;
 }
 
-.LateralBarIcons>button {
+.LateralBarIcons > button {
 	font-family: 'Segoe UI', Tahoma, sans-serif;
 	border: none;
 	padding: 0px 8px;
@@ -107,7 +107,7 @@
 	height: 30px;
 }
 
-.LateralBarIcons>button:hover {
+.LateralBarIcons > button:hover {
 	background: #91C9F7;
 }
 

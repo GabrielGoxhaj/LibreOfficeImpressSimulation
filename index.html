@@ -486,18 +486,19 @@
 					</div>
 
 					<div class="LateralBarWrapper">
-							<div class="LateralBar1"  style="display: none;">
+						<div class="LateralBar1"
+							style="display: none; border-left: 1px solid #c3c3c3; border-top: 1px solid #c3c3c3; padding-left: 5px;">
+							<div class="title">
+								<p><b>Proprietà</b></p>
 								<div class="title">
-									<p><b>Proprietà</b></p>
-									<div class="title">
-										<p class="smallIcons">&#63;</p>
-										<p class="smallIcons" onclick="menuItemLateralBar1()">&times;</p>
-									</div>
+									<p class="smallIcons">&#63;</p>
+									<p class="smallIcons" onclick="menuItemLateralBar1()">&times;</p>
 								</div>
-								<div class="lateralBarCarattereTitle">
-									<p style="background-color: #e1e1e1"><b>Carattere</b></p>
-								</div>
-								<div class="lateralBarCarattere">
+							</div>
+							<div class="lateralBarCarattereTitle">
+								<p style="background-color: #e1e1e1"><b>Carattere</b></p>
+							</div>
+							<div class="lateralBarCarattere">
 								<div style="display: flex; justify-content: space-between;">
 									<select name="pets" id="pet-select">
 										<option value="">Comic Sans</option>
@@ -551,164 +552,191 @@
 								</div>
 							</div>
 
-								<div class="lateralBarElenchiTitle">
-									<p style="background-color: #e1e1e1"><b>Elenchi</b></p>
+							<div class="lateralBarElenchiTitle">
+								<p style="background-color: #e1e1e1"><b>Elenchi</b></p>
+							</div>
+							<div class="lateralBarElenchi"
+								style="font-size: 15px; display: flex; justify-content: space-between;">
+								<div>
+									<a class="button" style="padding: 4px;"><img
+											src="img/icons/elencoNonOrdinato.png"></a>
+									<a class="button" style="padding: 4px;"><img src="img/icons/elencoOrdinato.png"></a>
 								</div>
-								<div class="lateralBarElenchi" style="font-size: 15px; display: flex; justify-content: space-between;">
+								<div>
+									<a class="button" style="padding: 4px;"><img src="img/icons/abbassaElenco.png"></a>
+									<a class="button" style="padding: 4px;"><img src="img/icons/alzaElenco.png"></a>
+									<a class="button" style="padding: 4px;"><img
+											src="img/icons/spostaGiuElenco.png"></a>
+									<a class="button" style="padding: 4px;"><img src="img/icons/spostaSuElenco.png"></a>
+								</div>
+							</div>
+
+							<div class="lateralBarParagrafoTitle">
+								<p style="background-color: #e1e1e1"><b>Paragrafo</b></p>
+							</div>
+							<div class="lateralBarParagrafo">
+								<div style="font-size: 15px; display: flex; justify-content: space-between;">
 									<div>
 										<a class="button" style="padding: 4px;"><img
-												src="img/icons/elencoNonOrdinato.png"></a>
+												src="img/icons/sinistraAllinea.png"></a>
 										<a class="button" style="padding: 4px;"><img
-												src="img/icons/elencoOrdinato.png"></a>
+												src="img/icons/centroAllinea.png"></a>
+										<a class="button" style="padding: 4px;"><img
+												src="img/icons/destraAllinea.png"></a>
+										<a class="button" style="padding: 4px;"><img
+												src="img/icons/giustificato.png"></a>
 									</div>
 									<div>
 										<a class="button" style="padding: 4px;"><img
-												src="img/icons/abbassaElenco.png"></a>
-										<a class="button" style="padding: 4px;"><img src="img/icons/alzaElenco.png"></a>
+												src="img/icons/altoAllinea.png"></a>
 										<a class="button" style="padding: 4px;"><img
-												src="img/icons/spostaGiuElenco.png"></a>
+												src="img/icons/centraVerticale.png"></a>
 										<a class="button" style="padding: 4px;"><img
-												src="img/icons/spostaSuElenco.png"></a>
+												src="img/icons/bassoAllinea.png"></a>
 									</div>
 								</div>
-
-								<div class="lateralBarParagrafoTitle">
-									<p style="background-color: #e1e1e1"><b>Paragrafo</b></p>
-								</div>
-								<div class="lateralBarParagrafo">
-									<div style="font-size: 15px; display: flex; justify-content: space-between;">
+								<hr />
+								<div style="font-size: 15px; display: flex; justify-content: space-between;">
+									<div>
+										<p>Spaziatura:</p>
 										<div>
 											<a class="button" style="padding: 4px;"><img
-													src="img/icons/sinistraAllinea.png"></a>
+													src="img/icons/aumentaSpaziatura.png"></a>
 											<a class="button" style="padding: 4px;"><img
-													src="img/icons/centroAllinea.png"></a>
-											<a class="button" style="padding: 4px;"><img
-													src="img/icons/destraAllinea.png"></a>
-											<a class="button" style="padding: 4px;"><img
-													src="img/icons/giustificato.png"></a>
+													src="img/icons/diminuisciSpaziatura.png"></a>
 										</div>
 										<div>
+											<a style="padding: 4px;"><img src="img/icons/sopraSpaziatura.png"></a>
+											<input type="number" min="0.00" value="0.00" step="0.10" placeholder="0.00">
+											<br />
+											<a style="padding: 4px;"><img src="img/icons/sottoSpaziatura.png"></a>
+											<input type="number" min="0.00" value="0.00" step="0.10" placeholder="0.00">
+											<br />
 											<a class="button" style="padding: 4px;"><img
-													src="img/icons/altoAllinea.png"></a>
-											<a class="button" style="padding: 4px;"><img
-													src="img/icons/centraVerticale.png"></a>
-											<a class="button" style="padding: 4px;"><img
-													src="img/icons/bassoAllinea.png"></a>
+													src="img/icons/interlinea.png"></a>
 										</div>
 									</div>
-									<hr />
-									<div style="font-size: 15px; display: flex; justify-content: space-between;">
+									<div>
+										<p>Rientro:</p>
+										<a class="button" style="padding: 4px;"><img
+												src="img/icons/aumentaRientro.png"></a>
+										<a class="button" style="padding: 4px;"><img
+												src="img/icons/diminuisciRientro.png"></a>
+										<a class="button" style="padding: 4px;"><img
+												src="img/icons/rientroCorpo.png"></a>
 										<div>
-											<p>Spaziatura:</p>
-											<div>
-												<a class="button" style="padding: 4px;"><img
-														src="img/icons/aumentaSpaziatura.png"></a>
-												<a class="button" style="padding: 4px;"><img
-														src="img/icons/diminuisciSpaziatura.png"></a>
-											</div>
-											<div>
-												<a style="padding: 4px;"><img src="img/icons/sopraSpaziatura.png"></a>
-												<input type="number" min="0.00" value="0.00" step="0.10"
-													placeholder="0.00">
-												<br />
-												<a style="padding: 4px;"><img src="img/icons/sottoSpaziatura.png"></a>
-												<input type="number" min="0.00" value="0.00" step="0.10"
-													placeholder="0.00">
-												<br />
-												<a class="button" style="padding: 4px;"><img
-														src="img/icons/interlinea.png"></a>
-											</div>
-										</div>
-										<div>
-											<p>Rientro:</p>
-											<a class="button" style="padding: 4px;"><img
-													src="img/icons/aumentaRientro.png"></a>
-											<a class="button" style="padding: 4px;"><img
-													src="img/icons/diminuisciRientro.png"></a>
-											<a class="button" style="padding: 4px;"><img
-													src="img/icons/rientroCorpo.png"></a>
-											<div>
-												<a style="padding: 4px;"><img src="img/icons/rientroPrima.png"
-														style="width: 15px;"></a>
-												<input type="number" min="0.00" value="0.00" step="0.10"
-													placeholder="0.00">
-												<br />
-												<a style="padding: 4px;"><img src="img/icons/rientroDopo.png"></a>
-												<input type="number" min="0.00" value="0.00" step="0.10"
-													placeholder="0.00">
-												<br />
-												<a style="padding: 4px;"><img src="img/icons/rientroPrimaRiga.png"></a>
-												<input type="number" min="0.00" value="0.00" step="0.10"
-													placeholder="0.00">
-											</div>
+											<a style="padding: 4px;"><img src="img/icons/rientroPrima.png"
+													style="width: 15px;"></a>
+											<input type="number" min="0.00" value="0.00" step="0.10" placeholder="0.00">
+											<br />
+											<a style="padding: 4px;"><img src="img/icons/rientroDopo.png"></a>
+											<input type="number" min="0.00" value="0.00" step="0.10" placeholder="0.00">
+											<br />
+											<a style="padding: 4px;"><img src="img/icons/rientroPrimaRiga.png"></a>
+											<input type="number" min="0.00" value="0.00" step="0.10" placeholder="0.00">
 										</div>
 									</div>
 								</div>
-
-								<div class="lateralBarAreaTitle">
-									<p style="background-color: #e1e1e1"><b>Area</b></p>
-								</div>
-								<div class="lateralBarArea">
-									<div style="display: flex; justify-content: space-between; align-items: center;">
-										<p>Riempimento: </p>
-										<select name="Riempimento-area" id="Riempimento-area">
-											<option value="Nessuno">Nessuno</option>
-											<option value="Colore">Colore</option>
-											<option value="Sfumatura">Sfumatura</option>
-											<option value="Tratteggio">Tratteggio</option>
-											<option value="Bitmap">Bitmap</option>
-											<option value="Motivo">Motivo</option>
-											<option value="Usa sfondo della diapositiva">Usa sfondo della diapositiva</option>
-										</select>
-									</div>
-
-									<div style="display: flex; justify-content: space-between; align-items: center;">
-										<p>Trasparenza: </p>
-										<select name="Trasparenza-area" id="Trasparenza-area">
-											<option value="Nessuna">Nessuna</option>
-											<option value="Pieno">Pieno</option>
-											<option value="Lineare">Lineare</option>
-											<option value="Assiale">Sfumatura</option>
-											<option value="Radiale">Radiale</option>
-											<option value="Elissoidale">Elissoidale</option>
-											<option value="Quadratico">Quadratico</option>
-											<option value="Quadrato">Quadrato</option>
-										</select>
-									</div>
-									<input type="range" id="vol" name="vol" value="trasparenza" min="0" max="50">
-								</div>
-								
 							</div>
-							<!-- <img src="img/iconsLateralBar/LateralBar1.PNG" class="LateralBar1"> -->
-							<img src="img/iconsLateralBar/LateralBar2.PNG" class="LateralBar2" style="display: none;">
-							<img src="img/iconsLateralBar/LateralBar3.PNG" class="LateralBar3" style="display: none;">
-							<img src="img/iconsLateralBar/LateralBar4.PNG" class="LateralBar4" style="display: none;">
-							<img src="img/iconsLateralBar/LateralBar5.PNG" class="LateralBar5" style="display: none;">
-							<img src="img/iconsLateralBar/LateralBar6.PNG" class="LateralBar6" style="display: none;">
-							<img src="img/iconsLateralBar/LateralBar7.PNG" class="LateralBar7" style="display: none;">
-							<img src="img/iconsLateralBar/LateralBar8.PNG" class="LateralBar8" style="display: none;">
-						
-						<div class="LateralBarTitle">
-							<div class="LateralBarIcons">
-								<button class="iconLateralBar1" onclick="menuItemLateralBar1()"><img
-										src="img/iconsLateralBar/iconDX1.png"></button>
-								<button class="iconLateralBar2" onclick="menuItemLateralBar2()"><img
-										src="img/iconsLateralBar/iconDX2.png"></button>
-								<button class="iconLateralBar3" onclick="menuItemLateralBar3()"><img
-										src="img/iconsLateralBar/iconDX3.png"></button>
-								<button class="iconLateralBar4" onclick="menuItemLateralBar4()"><img
-										src="img/iconsLateralBar/iconDX4.png"></button>
-								<button class="iconLateralBar5" onclick="menuItemLateralBar5()"><img
-										src="img/iconsLateralBar/iconDX5.png"></button>
-								<button class="iconLateralBar6" onclick="menuItemLateralBar6()"><img
-										src="img/iconsLateralBar/iconDX6.png"></button>
-								<button class="iconLateralBar7" onclick="menuItemLateralBar7()"><img
-										src="img/iconsLateralBar/iconDX7.png"></button>
-								<button class="iconLateralBar8" onclick="menuItemLateralBar8()"><img
-										src="img/iconsLateralBar/iconDX8.png"></button>
+
+							<div class="lateralBarAreaTitle">
+								<p style="background-color: #e1e1e1"><b>Area</b></p>
 							</div>
-							<!-- <p>Animazione</p><p class="smallIcons">&#63; &times;</p> -->
+							<div class="lateralBarArea">
+								<div style="display: flex; justify-content: space-between; align-items: center;">
+									<p>Riempimento: </p>
+									<select name="Riempimento-area" id="Riempimento-area">
+										<option value="Nessuno">Nessuno</option>
+										<option value="Colore">Colore</option>
+										<option value="Sfumatura">Sfumatura</option>
+										<option value="Tratteggio">Tratteggio</option>
+										<option value="Bitmap">Bitmap</option>
+										<option value="Motivo">Motivo</option>
+										<option value="Usa sfondo della diapositiva">Usa sfondo della diapositiva
+										</option>
+									</select>
+								</div>
+
+								<div style="display: flex; justify-content: space-between; align-items: center;">
+									<p>Trasparenza: </p>
+									<select name="Trasparenza-area" id="Trasparenza-area">
+										<option value="Nessuna">Nessuna</option>
+										<option value="Pieno">Pieno</option>
+										<option value="Lineare">Lineare</option>
+										<option value="Assiale">Sfumatura</option>
+										<option value="Radiale">Radiale</option>
+										<option value="Elissoidale">Elissoidale</option>
+										<option value="Quadratico">Quadratico</option>
+										<option value="Quadrato">Quadrato</option>
+									</select>
+								</div>
+								<input type="range" id="vol" name="vol" value="trasparenza" min="0" max="50">
+							</div>
 						</div>
+						<div class="LateralBar2"
+							style="border-left: 1px solid #c3c3c3; border-top: 1px solid #c3c3c3; padding-left: 5px; display: none;">
+							<div class="title">
+								<p><b>Stili</b></p>
+								<div class="title">
+									<p class="smallIcons">&#63;</p>
+									<p class="smallIcons" onclick="menuItemLateralBar2()">&times;</p>
+								</div>
+							</div>
+							<div style="font-size: 15px; display: flex; justify-content: space-between;">
+								<div>
+									<a class="button" style="padding: 4px;"><img src="img/icons/stiliDisegno.png"></a>
+									<a class="button" style="padding: 4px;"><img
+											src="img/icons/stiliPresentazione.png"></a>
+								</div>
+								<div>
+									<a class="button" style="padding: 4px;"><img
+											src="img/icons/modoRiempimento.png"></a>
+									<a style="padding: 4px;"><img src="img/icons/nuovoStile.png"></a>
+									<a class="button" style="padding: 4px;"><img src="img/icons/aggiornaStile.png"></a>
+								</div>
+							</div>
+							<div style="background-color: white; border: 1px solid #c3c3c3; height: 80%;">
+								<ul style="list-style: none;">
+									<li class="button">Note</li>
+									<li class="button">Oggetti di sfondo</li>
+									<li class="button">Sfondo</li>
+									<li class="button">Sottotitolo</li>
+									<li class="button">Struttura 1</li>
+									<li class="button">Titolo</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- <img src="img/iconsLateralBar/LateralBar1.PNG" class="LateralBar1"> -->
+						<!-- <img src="img/iconsLateralBar/LateralBar2.PNG" class="LateralBar2" style="display: none;"> -->
+						<img src="img/iconsLateralBar/LateralBar3.PNG" class="LateralBar3" style="display: none;">
+						<img src="img/iconsLateralBar/LateralBar4.PNG" class="LateralBar4" style="display: none;">
+						<img src="img/iconsLateralBar/LateralBar5.PNG" class="LateralBar5" style="display: none;">
+						<img src="img/iconsLateralBar/LateralBar6.PNG" class="LateralBar6" style="display: none;">
+						<img src="img/iconsLateralBar/LateralBar7.PNG" class="LateralBar7" style="display: none;">
+						<img src="img/iconsLateralBar/LateralBar8.PNG" class="LateralBar8" style="display: none;">
+
+
+						<div class="LateralBarIcons">
+							<button class="iconLateralBar1" onclick="menuItemLateralBar1()"><img
+									src="img/iconsLateralBar/iconDX1.png"></button>
+							<button class="iconLateralBar2" onclick="menuItemLateralBar2()"><img
+									src="img/iconsLateralBar/iconDX2.png"></button>
+							<button class="iconLateralBar3" onclick="menuItemLateralBar3()"><img
+									src="img/iconsLateralBar/iconDX3.png"></button>
+							<button class="iconLateralBar4" onclick="menuItemLateralBar4()"><img
+									src="img/iconsLateralBar/iconDX4.png"></button>
+							<button class="iconLateralBar5" onclick="menuItemLateralBar5()"><img
+									src="img/iconsLateralBar/iconDX5.png"></button>
+							<button class="iconLateralBar6" onclick="menuItemLateralBar6()"><img
+									src="img/iconsLateralBar/iconDX6.png"></button>
+							<button class="iconLateralBar7" onclick="menuItemLateralBar7()"><img
+									src="img/iconsLateralBar/iconDX7.png"></button>
+							<button class="iconLateralBar8" onclick="menuItemLateralBar8()"><img
+									src="img/iconsLateralBar/iconDX8.png"></button>
+						</div>
+						<!-- <p>Animazione</p><p class="smallIcons">&#63; &times;</p> -->
+
 					</div>
 				</div>
 				<div class="footer">
