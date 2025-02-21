@@ -53,17 +53,15 @@ function toggleDiapositiveMenu() {
     if (counterDiapositive === 0) {
         document.querySelector(".diapositiveWrapper").style.removeProperty("display");
         document.querySelector("#visualizzaPannelloDiapositive").classList.add("activated");
-        toggleMenuItem('dropdownImpressVisualizza');
         counterDiapositive = 1;
+        toggleMenuItem('dropdownImpressVisualizza');
     } else {
         document.querySelector(".diapositiveWrapper").style.setProperty("display", "none");
         document.querySelector("#visualizzaPannelloDiapositive").classList.remove("activated"); // Explicitly setting normal
-        toggleMenuItem('dropdownImpressVisualizza');
         counterDiapositive = 0;
+        toggleMenuItem('dropdownImpressVisualizza');
     }
 }
-
-
 
 let toggleLateralBar = 1;
 function togglerLateralBar() {
