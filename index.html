@@ -117,16 +117,26 @@
 			<div class="winbody" id="impressBody">
 				<!-- Menu Bar Libre Office Impress -->
 				<div class="menubarImpress">
-					<button class="menubarItemImpress" onclick="toggleMenuItem('dropdownImpressFile', this);">File</button>
-					<button class="menubarItemImpress" onclick="toggleMenuItem('dropdownImpressModifica', this);">Modifica</button>
-					<button class="menubarItemImpress" onclick="toggleMenuItem('dropdownImpressVisualizza', this);">Visualizza</button>
-					<button class="menubarItemImpress" onclick="toggleMenuItem('dropdownImpressInserisci', this);">Inserisci</button>
-					<button class="menubarItemImpress" onclick="toggleMenuItem('dropdownImpressFormato', this);">Formato</button>
-					<button class="menubarItemImpress" onclick="toggleMenuItem('dropdownImpressDiapositiva', this);">Diapositiva</button>
-					<button class="menubarItemImpress" onclick="toggleMenuItem('dropdownImpressPresentazione', this);">Presentazione</button>
-					<button class="menubarItemImpress" onclick="toggleMenuItem('dropdownImpressStrumenti', this);">Strumenti</button>
-					<button class="menubarItemImpress" onclick="toggleMenuItem('dropdownImpressFinestra', this);">Finestra</button>
-					<button class="menubarItemImpress" onclick="toggleMenuItem('dropdownImpressAiuto', this);">Aiuto</button>					
+					<button class="menubarItemImpress"
+						onclick="toggleMenuItem('dropdownImpressFile', this);">File</button>
+					<button class="menubarItemImpress"
+						onclick="toggleMenuItem('dropdownImpressModifica', this);">Modifica</button>
+					<button class="menubarItemImpress"
+						onclick="toggleMenuItem('dropdownImpressVisualizza', this);">Visualizza</button>
+					<button class="menubarItemImpress"
+						onclick="toggleMenuItem('dropdownImpressInserisci', this);">Inserisci</button>
+					<button class="menubarItemImpress"
+						onclick="toggleMenuItem('dropdownImpressFormato', this);">Formato</button>
+					<button class="menubarItemImpress"
+						onclick="toggleMenuItem('dropdownImpressDiapositiva', this);">Diapositiva</button>
+					<button class="menubarItemImpress"
+						onclick="toggleMenuItem('dropdownImpressPresentazione', this);">Presentazione</button>
+					<button class="menubarItemImpress"
+						onclick="toggleMenuItem('dropdownImpressStrumenti', this);">Strumenti</button>
+					<button class="menubarItemImpress"
+						onclick="toggleMenuItem('dropdownImpressFinestra', this);">Finestra</button>
+					<button class="menubarItemImpress"
+						onclick="toggleMenuItem('dropdownImpressAiuto', this);">Aiuto</button>
 				</div>
 				<!-- Libre Office Dropdown File -->
 				<div id="dropdownImpressFile" class="dropdownImpressFile">
@@ -201,7 +211,8 @@
 					<a id="visualizzaBarreDegliStrumenti">Barre degli strumenti</a>
 					<hr class="dropdown-separator">
 					<a id="visualizzaBarraDiStato">Barra di stato</a>
-					<a id="visualizzaPannelloDiapositive" class="activated" onclick="toggleDiapositiveMenu()">Pannello diapositive</a>
+					<a id="visualizzaPannelloDiapositive" class="activated" onclick="toggleDiapositiveMenu()">Pannello
+						diapositive</a>
 					<a id="visualizzaBarraASchedeDelleViste">Barra a schede delle viste</a>
 					<hr class="dropdown-separator">
 					<a id="visualizzaRighelli">Righelli</a>
@@ -211,7 +222,7 @@
 					<a id="visualizzaCommenti">Commenti</a>
 					<a id="visualizzaColoreToniDiGrigio">Colore/Toni di grigio</a>
 					<hr class="dropdown-separator">
-					<a id="visualizzaBarraLaterale" class="activated" onclick="togglerMenuDX()">Barra laterale</a>
+					<a id="visualizzaBarraLaterale" class="activated" onclick="togglerLateralBar()">Barra laterale</a>
 					<a id="visualizzaLayoutDiapositiva" onclick="menuItemLateralBar1()">Layout diapositiva</a>
 					<a id="visualizzaCambioDiapositiva" onclick="menuItemLateralBar6()">Cambio diapositiva</a>
 					<a id="visualizzaAnimazione" onclick="menuItemLateralBar7()">Animazione</a>
@@ -411,7 +422,8 @@
 					<button class="iconRow1"><img src="img/iconsR1/25r1.png"></button>
 					<button class="iconRow1"><img src="img/iconsR1/26r1.png"></button>
 					<button class="iconRow1"><img src="img/iconsR1/27r1.png"></button>
-					<button class="iconRow1 selected" onclick="togglerRow2(this)"><img src="img/iconsR1/28r1.png"></button>
+					<button class="iconRow1 selected" onclick="togglerRow2(this)"><img
+							src="img/iconsR1/28r1.png"></button>
 					<button class="iconRow1"><img src="img/iconsR1/29r1.png"></button>
 					<button class="iconRow1"><img src="img/iconsR1/30r1.png"></button>
 					<button class="iconRow1"><img src="img/iconsR1/31r1.png"></button>
@@ -457,23 +469,217 @@
 				</div>
 
 				<!-- Libre Office Impress UI HTML W.I.P. -->
-				 <div class="impressWrapper" alt="Libre Office UI">
+				<div class="impressWrapper" alt="Libre Office UI">
 					<div class="diapositiveWrapper">
-						<div class="diapositiveTitle">
+						<div class="title">
 							<p>Diapositive</p>
-							<p class="smallIcons" onclick="document.querySelector('.diapositiveWrapper').style.setProperty('display', 'none'); document.querySelector('#visualizzaPannelloDiapositive').style.fontWeight = 'normal'; toggleDiapositive = 0;">&times;</p>
+							<p class="smallIcons"
+								onclick="document.querySelector('.diapositiveWrapper').style.setProperty('display', 'none'); document.querySelector('#visualizzaPannelloDiapositive').style.fontWeight = 'normal'; toggleDiapositive = 0;">
+								&times;</p>
 						</div>
-					</div>	
+					</div>
 					<div class="mainBox">
 						<div class="diapositiva">
 							<textarea placeholder="Fai clic per aggiungere un titolo"></textarea>
 							<textarea placeholder="Fai clic per aggiungere del testo"></textarea>
 						</div>
 					</div>
-					
+
 					<div class="LateralBarWrapper">
-						<div class="menuOpenedTest">
-							<img src="img/iconsLateralBar/LateralBar1.PNG" class="LateralBar1" style="display: none;">
+							<div class="LateralBar1"  style="display: none;">
+								<div class="title">
+									<p><b>Proprietà</b></p>
+									<div class="title">
+										<p class="smallIcons">&#63;</p>
+										<p class="smallIcons" onclick="menuItemLateralBar1()">&times;</p>
+									</div>
+								</div>
+								<div class="lateralBarCarattereTitle">
+									<p style="background-color: #e1e1e1"><b>Carattere</b></p>
+								</div>
+								<div class="lateralBarCarattere">
+								<div style="display: flex; justify-content: space-between;">
+									<select name="pets" id="pet-select">
+										<option value="">Comic Sans</option>
+										<option value="dog">Dog</option>
+										<option value="cat">Cat</option>
+										<option value="hamster">Hamster</option>
+										<option value="parrot">Parrot</option>
+										<option value="spider">Spider</option>
+										<option value="goldfish">Goldfish</option>
+									</select>
+
+									<select name="size" id="size-select">
+										<option value="16pt">16pt</option>
+										<option value="18pt">18pt</option>
+										<option value="20pt">20pt</option>
+										<option value="22pt">22pt</option>
+										<option value="24pt">24pt</option>
+										<option value="26pt">26pt</option>
+										<option value="30pt">30pt</option>
+									</select>
+								</div>
+								<br />
+								<div style="font-size: 15px; display: flex; justify-content: space-between;">
+									<div>
+										<a class="button" style="padding: 4px;"><b>G</b></a>
+										<a class="button" style="padding: 4px;"><i>C</i></a>
+										<a class="button" style="padding: 4px; text-decoration: underline;">S</a>
+										<a class="button" style="padding: 4px; text-decoration: line-through">S</a>
+										<a class="button" style="padding: 4px; text-shadow: 2px 2px;">S</a>
+									</div>
+									<div>
+										<a class="button" style="padding: 4px;">A</a>
+										<a class="button" style="padding: 4px;">A</a>
+										<a class="button" style="padding: 4px;">A</a>
+									</div>
+								</div>
+								<br />
+								<div style="font-size: 15px; display: flex; justify-content: space-between;">
+									<div>
+										<a class="button"
+											style="padding: 4px; text-decoration: underline; text-decoration-color: red; text-decoration-thickness: 5px; text-underline-offset: 0px;">A</a>
+										<a class="button"
+											style="padding: 4px; text-decoration: underline; text-decoration-color: yellow; text-decoration-thickness: 5px; text-underline-offset: 0px;">ab</a>
+										<a class="button"
+											style="padding: 4px; text-decoration: underline; text-decoration-color: rgb(8, 239, 255); text-decoration-thickness: 5px; text-underline-offset: 0px;">AV</a>
+									</div>
+									<div>
+										<a class="button" style="padding: 4px;">x2</a>
+										<a class="button" style="padding: 4px;">x2</a>
+									</div>
+								</div>
+							</div>
+
+								<div class="lateralBarElenchiTitle">
+									<p style="background-color: #e1e1e1"><b>Elenchi</b></p>
+								</div>
+								<div class="lateralBarElenchi" style="font-size: 15px; display: flex; justify-content: space-between;">
+									<div>
+										<a class="button" style="padding: 4px;"><img
+												src="img/icons/elencoNonOrdinato.png"></a>
+										<a class="button" style="padding: 4px;"><img
+												src="img/icons/elencoOrdinato.png"></a>
+									</div>
+									<div>
+										<a class="button" style="padding: 4px;"><img
+												src="img/icons/abbassaElenco.png"></a>
+										<a class="button" style="padding: 4px;"><img src="img/icons/alzaElenco.png"></a>
+										<a class="button" style="padding: 4px;"><img
+												src="img/icons/spostaGiuElenco.png"></a>
+										<a class="button" style="padding: 4px;"><img
+												src="img/icons/spostaSuElenco.png"></a>
+									</div>
+								</div>
+
+								<div class="lateralBarParagrafoTitle">
+									<p style="background-color: #e1e1e1"><b>Paragrafo</b></p>
+								</div>
+								<div class="lateralBarParagrafo">
+									<div style="font-size: 15px; display: flex; justify-content: space-between;">
+										<div>
+											<a class="button" style="padding: 4px;"><img
+													src="img/icons/sinistraAllinea.png"></a>
+											<a class="button" style="padding: 4px;"><img
+													src="img/icons/centroAllinea.png"></a>
+											<a class="button" style="padding: 4px;"><img
+													src="img/icons/destraAllinea.png"></a>
+											<a class="button" style="padding: 4px;"><img
+													src="img/icons/giustificato.png"></a>
+										</div>
+										<div>
+											<a class="button" style="padding: 4px;"><img
+													src="img/icons/altoAllinea.png"></a>
+											<a class="button" style="padding: 4px;"><img
+													src="img/icons/centraVerticale.png"></a>
+											<a class="button" style="padding: 4px;"><img
+													src="img/icons/bassoAllinea.png"></a>
+										</div>
+									</div>
+									<hr />
+									<div style="font-size: 15px; display: flex; justify-content: space-between;">
+										<div>
+											<p>Spaziatura:</p>
+											<div>
+												<a class="button" style="padding: 4px;"><img
+														src="img/icons/aumentaSpaziatura.png"></a>
+												<a class="button" style="padding: 4px;"><img
+														src="img/icons/diminuisciSpaziatura.png"></a>
+											</div>
+											<div>
+												<a style="padding: 4px;"><img src="img/icons/sopraSpaziatura.png"></a>
+												<input type="number" min="0.00" value="0.00" step="0.10"
+													placeholder="0.00">
+												<br />
+												<a style="padding: 4px;"><img src="img/icons/sottoSpaziatura.png"></a>
+												<input type="number" min="0.00" value="0.00" step="0.10"
+													placeholder="0.00">
+												<br />
+												<a class="button" style="padding: 4px;"><img
+														src="img/icons/interlinea.png"></a>
+											</div>
+										</div>
+										<div>
+											<p>Rientro:</p>
+											<a class="button" style="padding: 4px;"><img
+													src="img/icons/aumentaRientro.png"></a>
+											<a class="button" style="padding: 4px;"><img
+													src="img/icons/diminuisciRientro.png"></a>
+											<a class="button" style="padding: 4px;"><img
+													src="img/icons/rientroCorpo.png"></a>
+											<div>
+												<a style="padding: 4px;"><img src="img/icons/rientroPrima.png"
+														style="width: 15px;"></a>
+												<input type="number" min="0.00" value="0.00" step="0.10"
+													placeholder="0.00">
+												<br />
+												<a style="padding: 4px;"><img src="img/icons/rientroDopo.png"></a>
+												<input type="number" min="0.00" value="0.00" step="0.10"
+													placeholder="0.00">
+												<br />
+												<a style="padding: 4px;"><img src="img/icons/rientroPrimaRiga.png"></a>
+												<input type="number" min="0.00" value="0.00" step="0.10"
+													placeholder="0.00">
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="lateralBarAreaTitle">
+									<p style="background-color: #e1e1e1"><b>Area</b></p>
+								</div>
+								<div class="lateralBarArea">
+									<div style="display: flex; justify-content: space-between; align-items: center;">
+										<p>Riempimento: </p>
+										<select name="Riempimento-area" id="Riempimento-area">
+											<option value="Nessuno">Nessuno</option>
+											<option value="Colore">Colore</option>
+											<option value="Sfumatura">Sfumatura</option>
+											<option value="Tratteggio">Tratteggio</option>
+											<option value="Bitmap">Bitmap</option>
+											<option value="Motivo">Motivo</option>
+											<option value="Usa sfondo della diapositiva">Usa sfondo della diapositiva</option>
+										</select>
+									</div>
+
+									<div style="display: flex; justify-content: space-between; align-items: center;">
+										<p>Trasparenza: </p>
+										<select name="Trasparenza-area" id="Trasparenza-area">
+											<option value="Nessuna">Nessuna</option>
+											<option value="Pieno">Pieno</option>
+											<option value="Lineare">Lineare</option>
+											<option value="Assiale">Sfumatura</option>
+											<option value="Radiale">Radiale</option>
+											<option value="Elissoidale">Elissoidale</option>
+											<option value="Quadratico">Quadratico</option>
+											<option value="Quadrato">Quadrato</option>
+										</select>
+									</div>
+									<input type="range" id="vol" name="vol" value="trasparenza" min="0" max="50">
+								</div>
+								
+							</div>
+							<!-- <img src="img/iconsLateralBar/LateralBar1.PNG" class="LateralBar1"> -->
 							<img src="img/iconsLateralBar/LateralBar2.PNG" class="LateralBar2" style="display: none;">
 							<img src="img/iconsLateralBar/LateralBar3.PNG" class="LateralBar3" style="display: none;">
 							<img src="img/iconsLateralBar/LateralBar4.PNG" class="LateralBar4" style="display: none;">
@@ -481,34 +687,41 @@
 							<img src="img/iconsLateralBar/LateralBar6.PNG" class="LateralBar6" style="display: none;">
 							<img src="img/iconsLateralBar/LateralBar7.PNG" class="LateralBar7" style="display: none;">
 							<img src="img/iconsLateralBar/LateralBar8.PNG" class="LateralBar8" style="display: none;">
-						</div>
+						
 						<div class="LateralBarTitle">
 							<div class="LateralBarIcons">
-								<button class="iconLateralBar1" onclick="menuItemLateralBar1()"><img src="img/iconsLateralBar/iconDX1.png"></button>
-								<button class="iconLateralBar2" onclick="menuItemLateralBar2()"><img src="img/iconsLateralBar/iconDX2.png"></button>
-								<button class="iconLateralBar3" onclick="menuItemLateralBar3()"><img src="img/iconsLateralBar/iconDX3.png"></button>
-								<button class="iconLateralBar4" onclick="menuItemLateralBar4()"><img src="img/iconsLateralBar/iconDX4.png"></button>
-								<button class="iconLateralBar5" onclick="menuItemLateralBar5()"><img src="img/iconsLateralBar/iconDX5.png"></button>
-								<button class="iconLateralBar6" onclick="menuItemLateralBar6()"><img src="img/iconsLateralBar/iconDX6.png"></button>
-								<button class="iconLateralBar7" onclick="menuItemLateralBar7()"><img src="img/iconsLateralBar/iconDX7.png"></button>
-								<button class="iconLateralBar8" onclick="menuItemLateralBar8()"><img src="img/iconsLateralBar/iconDX8.png"></button>
+								<button class="iconLateralBar1" onclick="menuItemLateralBar1()"><img
+										src="img/iconsLateralBar/iconDX1.png"></button>
+								<button class="iconLateralBar2" onclick="menuItemLateralBar2()"><img
+										src="img/iconsLateralBar/iconDX2.png"></button>
+								<button class="iconLateralBar3" onclick="menuItemLateralBar3()"><img
+										src="img/iconsLateralBar/iconDX3.png"></button>
+								<button class="iconLateralBar4" onclick="menuItemLateralBar4()"><img
+										src="img/iconsLateralBar/iconDX4.png"></button>
+								<button class="iconLateralBar5" onclick="menuItemLateralBar5()"><img
+										src="img/iconsLateralBar/iconDX5.png"></button>
+								<button class="iconLateralBar6" onclick="menuItemLateralBar6()"><img
+										src="img/iconsLateralBar/iconDX6.png"></button>
+								<button class="iconLateralBar7" onclick="menuItemLateralBar7()"><img
+										src="img/iconsLateralBar/iconDX7.png"></button>
+								<button class="iconLateralBar8" onclick="menuItemLateralBar8()"><img
+										src="img/iconsLateralBar/iconDX8.png"></button>
 							</div>
 							<!-- <p>Animazione</p><p class="smallIcons">&#63; &times;</p> -->
 						</div>
 					</div>
-				 </div>
-				 <div class="footer">
-					<!-- <img src="img/footerOffice.PNG"> -->
-					
 				</div>
-				
+				<div class="footer">
+					<img src="img/footerOffice.PNG">
+				</div>
+
 				<!-- Libre Office Impress UI -->
 				<!-- <div>
 					<img class="impressUI" src="img/LibreOfficeImpressFullUI.png" alt="LibreOffice Impress">
 				</div> -->
 			</div>
 		</div> <!-- Fine Libre Office Impress -->
-		
+
 		<!-- Start Menu -->
 		<div class="startMenu" id="startMenu" style="display: none">
 			<div class="startApps" id="startApps">
@@ -569,6 +782,7 @@
 	</div> <!-- Fine Search menu and Taskbar -->
 
 	<script src="js/windows.js" type="text/javascript"></script>
+	<script src="js/togglers.js" type="text/javascript"></script>
 </body>
 
 </html>

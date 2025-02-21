@@ -1,5 +1,12 @@
 /* Stile generale per Main Area di Libre Office Impress */
 
+.fullscreen {
+    width: 100% !important;
+    height: 100% !important;
+    top: 0px !important;
+    left: 0px !important;
+}
+
 .impressUI {
 	width: 100%;
 }
@@ -25,7 +32,7 @@
 
 /* Menu Diapositive */
 
-.diapositiveTitle {
+.title {
 	display: flex;
 	justify-content: space-between;
 	background-color: #f0f0f0;
@@ -54,10 +61,10 @@
 
 .diapositiva>textarea {
 	text-align: center;
-	vertical-align: middle;
 	font-size: 40px;
-	width: 70%;
-	height: 80%;
+	max-width: 100%;
+	max-height: 80%;
+	flex-direction: column;
 }
 
 .mainBox {
@@ -116,6 +123,11 @@
 	background-color: #91C9F7;
 }
 
+.button:hover,
+.smallIcons:active {
+	background-color: #91C9F7
+}
+
 .footer {
 	position: fixed;
 	bottom: 45px;
@@ -123,4 +135,18 @@
 
 .activated {
 	font-weight: bold;
+}
+
+input{
+	width: 50px;
+	border: 1px solid grey;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+	opacity: 1;
+}
+
+input[type=range]{
+	width: 100px;
 }
