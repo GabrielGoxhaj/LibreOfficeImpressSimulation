@@ -22,15 +22,35 @@
 	});
 
 // Dropdown functionality in LibreOfficeImpress
-	function toggleMenuItem(dropdownId) {
-		let $dropdown = $('#' + dropdownId);
-		if ($dropdown.is(':visible')) {
-			$dropdown.hide(); // Hide if it's already open
-		} else {
-			$('#dropdownImpressFile, #dropdownImpressModifica, #dropdownImpressVisualizza, #dropdownImpressInserisci, #dropdownImpressFormato, #dropdownImpressDiapositiva, #dropdownImpressPresentazione, #dropdownImpressStrumenti, #dropdownImpressFinestra, #dropdownImpressAiuto').hide(); // Hide all dropdowns
-			$dropdown.show(); // Show the clicked one
-		}
-	}
+function toggleMenuItem(dropdownId, button) {
+    let $dropdown = $('#' + dropdownId);
+    let $button = $(button);
+
+    if ($dropdown.is(':visible')) {
+        $dropdown.hide(); // Hide if already open
+    } else {
+        // Hide all other dropdowns
+        $('.dropdownImpressFile, .dropdownImpressModifica, .dropdownImpressVisualizza, .dropdownImpressInserisci, .dropdownImpressFormato, .dropdownImpressDiapositiva, .dropdownImpressPresentazione, .dropdownImpressStrumenti, .dropdownImpressFinestra, .dropdownImpressAiuto').hide();
+		$dropdown.show(); 
+        // Get button position
+        let buttonOffset = $button.offset();
+        let buttonHeight = $button.outerHeight();
+
+        // Set dropdown position directly below the button
+        $dropdown.css({
+            position: 'absolute',
+            left: buttonOffset.left + 'px',
+            display: 'block'
+        });
+    }
+}
+
+// Close dropdown when clicking outside
+$(document).on('click', function(event) {
+    if (!$(event.target).closest('.menubarItemImpress, .dropdownImpressFile, .dropdownImpressModifica, .dropdownImpressVisualizza, .dropdownImpressInserisci, .dropdownImpressFormato, .dropdownImpressDiapositiva, .dropdownImpressPresentazione, .dropdownImpressStrumenti, .dropdownImpressFinestra, .dropdownImpressAiuto').length) {
+        $('.dropdownImpressFile, .dropdownImpressModifica, .dropdownImpressVisualizza, .dropdownImpressInserisci, .dropdownImpressFormato, .dropdownImpressDiapositiva, .dropdownImpressPresentazione, .dropdownImpressStrumenti, .dropdownImpressFinestra, .dropdownImpressAiuto').hide();
+    }
+});
 	function menuItemImpressFile() {toggleMenuItem('dropdownImpressFile');}
 	function menuItemImpressModifica() {toggleMenuItem('dropdownImpressModifica');}
 	function menuItemImpressVisualizza() {toggleMenuItem('dropdownImpressVisualizza');}
@@ -56,14 +76,17 @@
 			toggleDiapositive = 0;
 		}
 	}
-
+	
+	let counterDXMenu = 0;
 	function toggleDXMenuImage(index) {
 		let $image = $('.DXMenu' + index);
 		if ($image.is(':visible')) {
 			$image.hide();
+			counterDXMenu = 1;
 		} else {
 			$('.DXMenu1, .DXMenu2, .DXMenu3, .DXMenu4, .DXMenu5, .DXMenu6, .DXMenu7, DXMenu8').hide();
 			$image.show();
+			counterDXMenu = 0;
 		}
 	}
 	function unsetAllBackgroundColors() {
@@ -74,7 +97,8 @@
 	function menuItemDXMenu(index) {
 		toggleDXMenuImage(index);
 		unsetAllBackgroundColors();
-		document.querySelector(`.iconDXMenu${index}`).style.setProperty("background-color", "#91C9F7");
+		if (counterDXMenu === 0){
+			document.querySelector(`.iconDXMenu${index}`).style.setProperty("background-color", "#91C9F7");}
 	}
 	function menuItemDXMenu1(){menuItemDXMenu(1);}
 	function menuItemDXMenu2(){menuItemDXMenu(2);}

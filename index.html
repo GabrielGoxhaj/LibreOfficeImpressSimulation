@@ -115,21 +115,16 @@
 			<div class="winbody" id="impressBody">
 				<!-- Menu Bar Libre Office Impress -->
 				<div class="menubarImpress">
-					<button class="menubarItemImpress" onclick="menuItemImpressFile();">File</button>
-					<button class="menubarItemImpress" onclick="menuItemImpressModifica();">Modifica</button>
-					<button class="menubarItemImpress"
-						onclick="menuItemImpressVisualizza();">Visualizza</button>
-					<button class="menubarItemImpress"
-						onclick="menuItemImpressInserisci();">Inserisci</button>
-					<button class="menubarItemImpress" onclick="menuItemImpressFormato();">Formato</button>
-					<button class="menubarItemImpress"
-						onclick="menuItemImpressDiapositiva();">Diapositiva</button>
-					<button class="menubarItemImpress"
-						onclick="menuItemImpressPresentazione();">Presentazione</button>
-					<button class="menubarItemImpress"
-						onclick="menuItemImpressStrumenti();">Strumenti</button>
-					<button class="menubarItemImpress" onclick="menuItemImpressFinestra();">Finestra</button>
-					<button class="menubarItemImpress" onclick="menuItemImpressAiuto()">Aiuto</button>
+					<button class="menubarItemImpress" onclick="toggleMenuItem('dropdownImpressFile', this);">File</button>
+					<button class="menubarItemImpress" onclick="toggleMenuItem('dropdownImpressModifica', this);">Modifica</button>
+					<button class="menubarItemImpress" onclick="toggleMenuItem('dropdownImpressVisualizza', this);">Visualizza</button>
+					<button class="menubarItemImpress" onclick="toggleMenuItem('dropdownImpressInserisci', this);">Inserisci</button>
+					<button class="menubarItemImpress" onclick="toggleMenuItem('dropdownImpressFormato', this);">Formato</button>
+					<button class="menubarItemImpress" onclick="toggleMenuItem('dropdownImpressDiapositiva', this);">Diapositiva</button>
+					<button class="menubarItemImpress" onclick="toggleMenuItem('dropdownImpressPresentazione', this);">Presentazione</button>
+					<button class="menubarItemImpress" onclick="toggleMenuItem('dropdownImpressStrumenti', this);">Strumenti</button>
+					<button class="menubarItemImpress" onclick="toggleMenuItem('dropdownImpressFinestra', this);">Finestra</button>
+					<button class="menubarItemImpress" onclick="toggleMenuItem('dropdownImpressAiuto', this);">Aiuto</button>					
 				</div>
 				<!-- Libre Office Dropdown File -->
 				<div id="dropdownImpressFile" class="dropdownImpressFile">
@@ -377,17 +372,17 @@
 					<a id="aiutoInformazioniLibreOffice">Informazioni su LibreOffice</a>
 				</div>
 				<!-- Libre Office Impress Icons Riga 1 -->
-				<div id="iconImpressRiga" class="iconImpressRiga">
+				<div id="iconImpressRow" class="iconImpressRow">
 					<button class="iconRiga1"><img src="img/iconsR1/01r1.png"></button>
 					<button class="iconRiga1"><img src="img/iconsR1/02r1.png"></button>
 					<button class="iconRiga1"><img src="img/iconsR1/03r1.png"></button>
 					<div class="vl"></div>
 					<button class="iconRiga1"><img src="img/iconsR1/04r1.png"></button>
-					<button class="iconRiga1"><img src="img/iconsR1/05r1.png"></button>
+					<button class="iconRiga1" onclick="print()"><img src="img/iconsR1/05r1.png"></button>
 					<div class="vl"></div>
-					<button class="iconRiga1 disabled"><img src="img/iconsR1/06r1.png"></button>
-					<button class="iconRiga1"><img src="img/iconsR1/07r1.png"></button>
-					<button class="iconRiga1"><img src="img/iconsR1/08r1.png"></button>
+					<button class="iconRiga1" onclick="execCommand('cut')"><img src="img/iconsR1/06r1.png"></button>
+					<button class="iconRiga1" onclick="execCommand('copy')"><img src="img/iconsR1/07r1.png"></button>
+					<button class="iconRiga1" onclick="execCommand('paste')"><img src="img/iconsR1/08r1.png"></button>
 					<div class="vl"></div>
 					<button class="iconRiga1"><img src="img/iconsR1/09r1.png"></button>
 					<div class="vl"></div>
@@ -422,7 +417,7 @@
 					<button class="iconRiga1"><img src="img/iconsR1/32r1.png"></button>
 				</div>
 				<!-- Libre Office Impress Icons Riga 2 -->
-				<div id="iconImpressRiga" class="iconImpressRiga">
+				<div id="iconImpressRow" class="iconImpressRow">
 					<button class="iconRiga2"><img src="img/iconsR2/01r2.png"></button>
 					<button class="iconRiga2"><img src="img/iconsR2/02r2.png"></button>
 					<div class="vl"></div>

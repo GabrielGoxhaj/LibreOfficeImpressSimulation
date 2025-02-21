@@ -1,7 +1,3 @@
-/* styles.css */
-/* For the Windows 10 CSS3 project */
-/* (c) 2016 Nitin Seshadri */
-/**/
 body {
 	background: url('img/img0_3840x2160.jpg') center top no-repeat;
 	background-size: cover;
@@ -131,9 +127,15 @@ div.winbody {
 	top: 0;
 }
 
+.menubarImpress {
+    position: relative; /* Ensure relative positioning for contained elements */
+    display: flex;
+    align-items: center;
+}
+
 div.menubar,
 div.menubarImpress,
-div.iconImpressRiga {
+div.iconImpressRow {
 	background: #FFFFFF;
 	font-family: 'Segoe UI', Tahoma, sans-serif;
 	font-size: 12px;
@@ -154,6 +156,7 @@ button.menubarItemImpress {
 	border: 2px solid white;
 	padding: 0px 4px;
 	transition: 0.1s;
+	position: relative;
 }
 
 button.iconRiga1,
@@ -263,6 +266,8 @@ textarea {
 	border: lightgray;
 	border-width: 1px;
 	border-style: solid;
+	position: absolute;
+	z-index: 10;
 }
 
 .dropdown a,
@@ -739,15 +744,12 @@ div.taskbar {
 }
 
 .diapositiva {
-	display: flex;
-	flex-direction: column;
 	background-color: white;
-	align-items: center;
-	height: 100%;
 	text-align: center;
-	vertical-align: middle;
-	font-size: 40px;
-	width: 100%;
+	width: 70%;
+	top: 50%;
+	position: absolute;
+	left: 25%;
 }
 
 .diapositiva > textarea {
@@ -756,12 +758,13 @@ div.taskbar {
 	font-size: 40px;
 	width: 70%;
 	height: 80%;
-	resize: none;
 }
 
 .mainBox {
 	width: 100%;
 	height: 100%;
+	position: relative;
+	flex: 1;
 }
 
 .footer {
