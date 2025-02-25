@@ -85,7 +85,7 @@ function toggleLateralBarImage(index) {
         $image.hide();
         counterLateralBar = 1;
     } else {
-        $('.LateralBar1, .LateralBar2, .LateralBar3, .LateralBar4, .LateralBar5, .LateralBar6, .LateralBar7, LateralBar8').hide();
+        $('.LateralBar1, .LateralBar2, .LateralBar3, .LateralBar4, .LateralBar5, .LateralBar6, .LateralBar7, .LateralBar8').hide();
         $image.show();
         counterLateralBar = 0;
     }

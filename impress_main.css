@@ -37,8 +37,7 @@
 	justify-content: space-between;
 	background-color: #f0f0f0;
 	font-family: 'Segoe UI', Tahoma, sans-serif;
-	border-bottom: 1px solid #c3c3c3;
-	border-top: 1px solid #c3c3c3;
+
 	padding-left: 5px;
 }
 
@@ -56,10 +55,9 @@
 .diapositiva {
 	background-color: white;
 	text-align: center;
-	width: 70%;
-	top: 50%;
-	position: absolute;
+	width: 80%;
 	left: 25%;
+	margin: auto;
 }
 
 .diapositiva>textarea {
@@ -108,6 +106,14 @@
 	transition: 0.1s;
 	width: 40px;
 	height: 30px;
+}
+
+.LateralBarIcons > .settingsLateralBar {
+	font-family: 'Segoe UI', Tahoma, sans-serif;
+	transition: 0.1s;
+	width: 40px;
+	height: 20px;
+	margin-bottom: 2px;
 }
 
 .LateralBarIcons > button:hover {
